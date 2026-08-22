@@ -1,0 +1,1397 @@
+🌾 CropShield AI
+
+AI-Powered Early Detection and Management of Crop Diseases and Pest Infestations
+
+Smart India Hackathon 2026
+
+Information
+
+Details
+
+Problem Statement ID
+
+26131
+
+Problem Statement
+
+Early detection and management of crop diseases and pest infestations
+
+Organization
+
+Government of Maharashtra
+
+Department
+
+Department of Skills, Employment, Entrepreneurship and Innovation
+
+Category
+
+Software
+
+Theme
+
+Agriculture, FoodTech & Rural Development
+
+📌 Problem Statement
+
+Farmers often identify crop diseases and pest infestations only after visible damage has already spread across their fields. Extension staff may have to cover large geographical areas, while laboratory diagnosis and agricultural experts may not always be immediately available.
+
+Crop-health risk is influenced by several factors, including:
+
+Weather conditions
+
+Crop growth stage
+
+Crop variety
+
+Soil conditions
+
+Local pest history
+
+Previous disease occurrences
+
+However, these factors are often not combined into a single actionable farm-level warning system.
+
+Incorrect or delayed diagnosis can result in:
+
+Delayed treatment
+
+Excessive pesticide usage
+
+Inappropriate pesticide usage
+
+Increased cultivation costs
+
+Residue-related concerns
+
+Crop yield losses
+
+The challenge is to provide timely, reliable and locally relevant crop-disease and pest detection, forecasting and management support.
+
+🎯 Problem Understanding
+
+The core problem is that farmers may discover diseases or pest attacks only after significant crop damage has occurred.
+
+The objective is to move from:
+
+Detect after damage → Treat
+
+to:
+
+Detect early → Assess risk → Take preventive action → Monitor
+
+💡 Proposed Solution
+
+CropShield AI is an intelligent crop-health platform that combines crop images, weather information, crop-stage information, soil conditions, pest history and geospatial information to support early detection and risk forecasting.
+
+Core Pipeline
+
+Crop Images
+     +
+Weather Data
+     +
+Crop Information
+     +
+Soil Conditions
+     +
+Pest History
+     +
+Field / Sensor Data
+     ↓
+AI / ML Analysis
+     ↓
+Disease & Pest Detection
+     ↓
+Risk Forecasting
+     ↓
+Geospatial Risk Mapping
+     ↓
+Expert Validation
+     ↓
+Management Recommendation
+     ↓
+Farmer Advisory
+     ↓
+Follow-up Monitoring
+
+🎯 Objectives
+
+Detect crop diseases and pest infestations at an early stage.
+
+Support image-based crop symptom identification.
+
+Forecast disease and pest risks using environmental information.
+
+Identify geographic hotspots.
+
+Provide understandable farmer advisories.
+
+Support agricultural extension workers and experts.
+
+Reduce unnecessary or inappropriate pesticide usage.
+
+Improve crop-health surveillance.
+
+Enable follow-up monitoring.
+
+Build a system that can learn from verified field observations.
+
+⭐ Key Features
+
+1. 📷 Image-Based Disease Detection
+
+Farmers can upload images of affected:
+
+Leaves
+
+Fruits
+
+Stems
+
+Plants
+
+The computer-vision model analyzes the image and predicts a possible disease or pest-related issue.
+
+Crop Image
+    ↓
+Image Preprocessing
+    ↓
+Computer Vision Model
+    ↓
+Disease / Pest Prediction
+    ↓
+Confidence Score
+
+2. 🐛 Pest Detection
+
+The system can incorporate:
+
+Pest-trap observations
+
+Pest counts
+
+Sensor inputs
+
+Historical pest activity
+
+Field observations
+
+This helps identify increasing pest activity before severe crop damage occurs.
+
+3. 🌦️ Weather-Based Risk Forecasting
+
+Weather conditions can influence crop disease and pest development.
+
+Relevant parameters can include:
+
+Temperature
+
+Humidity
+
+Rainfall
+
+Wind
+
+Weather trends
+
+Seasonal conditions
+
+Example:
+
+High Humidity
+      +
+Suitable Temperature
+      +
+Recent Rainfall
+      ↓
+Higher Disease Risk
+
+4. 🌱 Crop-Stage Analysis
+
+The system can consider:
+
+Crop type
+
+Crop variety
+
+Planting date
+
+Crop growth stage
+
+Expected harvesting period
+
+5. 🧪 Soil Condition Analysis
+
+Where data is available, the system can consider:
+
+Soil moisture
+
+Soil pH
+
+Soil type
+
+Nutrient conditions
+
+Previous soil-related issues
+
+6. 📍 Geospatial Hotspot Mapping
+
+The platform can visualize crop-health risk geographically.
+
+🟢 Low Risk
+🟡 Moderate Risk
+🟠 High Risk
+🔴 Critical Risk
+
+Agricultural officials can identify:
+
+Disease clusters
+
+Pest hotspots
+
+High-risk villages
+
+High-risk regions
+
+Disease-spread patterns
+
+7. 🔮 Early Risk Forecasting
+
+The system can estimate the possibility of future disease or pest occurrence.
+
+Current Risk
+      +
+Weather Forecast
+      +
+Crop Stage
+      +
+Historical Disease Data
+      +
+Local Pest History
+      ↓
+Predicted Future Risk
+
+8. 👨‍🌾 Farmer Advisory
+
+The system provides understandable recommendations based on the detected risk.
+
+Example:
+
+Disease Risk: HIGH
+
+Recommended Actions:
+
+✓ Inspect affected plants
+✓ Follow recommended integrated pest-management practices
+✓ Avoid unnecessary pesticide application
+✓ Contact an agricultural extension officer if required
+
+9. 🌐 Multilingual Advisory
+
+The platform can support:
+
+Marathi
+
+Hindi
+
+English
+
+Other regional languages
+
+Local-language support is important for farmer accessibility.
+
+10. 👨‍🔬 Expert Validation
+
+AI predictions should not automatically be treated as final diagnoses.
+
+AI Prediction
+      ↓
+Confidence Score
+      ↓
+Expert Review
+      ↓
+Confirmed / Corrected Result
+
+Agricultural experts or extension workers can validate uncertain or high-risk cases.
+
+11. 📚 Learning From Field Confirmations
+
+Verified field observations can become feedback for future model improvement.
+
+AI Prediction
+      ↓
+Field Observation
+      ↓
+Expert Confirmation
+      ↓
+Verified Data
+      ↓
+Model Improvement
+
+12. 📊 Agriculture Official Dashboard
+
+Officials can monitor:
+
+Disease hotspots
+
+Pest hotspots
+
+Affected fields
+
+Risk levels
+
+Disease trends
+
+Geographic distribution
+
+Farmer reports
+
+Expert-confirmed cases
+
+Advisory status
+
+🧠 AI/ML Architecture
+
+Computer Vision
+
+Possible approaches include:
+
+CNN
+
+Transfer Learning
+
+ResNet
+
+EfficientNet
+
+MobileNet
+
+Vision Transformers
+
+For an initial prototype, transfer learning can be used to achieve practical performance with a limited agricultural image dataset.
+
+Machine Learning
+
+For environmental and risk prediction:
+
+Random Forest
+
+XGBoost
+
+Gradient Boosting
+
+Logistic Regression
+
+Example:
+
+Weather
+Crop Stage
+Soil
+Location
+Pest History
+Disease History
+      ↓
+ML Model
+      ↓
+Disease / Pest Risk
+
+Time-Series Analysis
+
+Historical information can be used to understand disease and pest trends.
+
+Possible approaches:
+
+Moving averages
+
+Regression
+
+Tree-based models with temporal features
+
+LSTM/GRU for larger time-series datasets
+
+🔬 Multimodal AI
+
+A major strength of the solution is combining multiple sources of information instead of depending only on crop images.
+
+Crop Image
+    +
+Weather
+    +
+Crop Stage
+    +
+Soil
+    +
+Pest History
+    +
+Location
+    ↓
+Multimodal Risk Analysis
+    ↓
+Early Warning
+
+📊 Example Input
+
+{
+  "crop": "Tomato",
+  "crop_stage": "Flowering",
+  "location": "Nashik",
+  "temperature": 27,
+  "humidity": 82,
+  "rainfall": 18,
+  "soil_moisture": 65,
+  "previous_pest_activity": "High",
+  "image": "tomato_leaf.jpg"
+}
+
+📈 Example Output
+
+{
+  "predicted_issue": "Possible Fungal Disease",
+  "risk_level": "High",
+  "confidence": 0.91,
+  "recommended_action": "Further inspection and expert validation recommended",
+  "forecast": "High risk under current environmental conditions"
+}
+
+🏗️ System Architecture
+
+                    ┌─────────────────────┐
+                    │       FARMER        │
+                    └──────────┬──────────┘
+                               │
+                  Crop Image / Field Data
+                               │
+                               ↓
+              ┌────────────────────────────┐
+              │     DATA COLLECTION        │
+              ├────────────────────────────┤
+              │ Crop Image                 │
+              │ Crop Type                  │
+              │ Crop Stage                 │
+              │ Location                   │
+              │ Weather                    │
+              │ Soil                       │
+              │ Pest History               │
+              └─────────────┬──────────────┘
+                            ↓
+              ┌────────────────────────────┐
+              │     DATA PREPROCESSING     │
+              ├────────────────────────────┤
+              │ Image Processing           │
+              │ Missing Values             │
+              │ Normalization              │
+              │ Feature Engineering        │
+              └─────────────┬──────────────┘
+                            ↓
+          ┌─────────────────┴─────────────────┐
+          ↓                                   ↓
+┌─────────────────────┐           ┌──────────────────────┐
+│ Computer Vision     │           │ Risk Prediction      │
+│ Model               │           │ Model                │
+└──────────┬──────────┘           └──────────┬───────────┘
+           │                                 │
+           └────────────────┬────────────────┘
+                            ↓
+                 ┌────────────────────┐
+                 │ AI Decision Engine  │
+                 └─────────┬──────────┘
+                           ↓
+              ┌────────────────────────┐
+              │ Risk & Disease Result  │
+              └────────────┬───────────┘
+                           ↓
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+     Farmer App      Expert Portal     Official Dashboard
+          │                │                │
+          ↓                ↓                ↓
+      Advisory       Validation       Hotspot Mapping
+
+🔄 End-to-End Workflow
+
+1. Farmer submits crop information
+              ↓
+2. Crop image is uploaded
+              ↓
+3. Weather/location information is obtained
+              ↓
+4. Data preprocessing
+              ↓
+5. Image model identifies visual symptoms
+              ↓
+6. ML model calculates environmental risk
+              ↓
+7. Results are combined
+              ↓
+8. Risk level is generated
+              ↓
+9. Expert validation when required
+              ↓
+10. Advisory is generated
+              ↓
+11. Farmer receives notification
+              ↓
+12. Crop is monitored over time
+              ↓
+13. Confirmed results improve the knowledge base
+
+📚 Dataset
+
+Image Dataset
+
+Potential publicly available sources include:
+
+PlantVillage
+
+PlantDoc
+
+Publicly licensed agricultural disease datasets
+
+Government or agricultural research datasets where permitted
+
+The selected dataset should match the crops and diseases targeted by the prototype.
+
+Environmental Dataset
+
+Possible fields:
+
+date
+latitude
+longitude
+temperature
+humidity
+rainfall
+soil_moisture
+crop_type
+crop_stage
+disease_status
+pest_count
+
+Historical Disease Dataset
+
+Possible fields:
+
+date
+location
+crop
+disease
+severity
+weather_conditions
+confirmed_by
+
+Important: The project should clearly distinguish publicly sourced data, simulated/sample data and verified field data. Private or restricted data should not be claimed without authorization.
+
+🧹 Data Preprocessing
+
+Image Data
+
+Resize images
+
+Normalize pixel values
+
+Remove corrupted images
+
+Data augmentation
+
+Train/validation/test split
+
+Possible augmentation:
+
+Rotation
+
+Flip
+
+Crop
+
+Brightness adjustment
+
+Zoom
+
+Tabular Data
+
+Handle missing values
+
+Remove duplicates
+
+Encode categorical variables
+
+Normalize numerical variables
+
+Detect outliers
+
+Feature engineering
+
+🧪 Feature Engineering
+
+Crop Features
+
+Crop type
+
+Variety
+
+Crop age
+
+Growth stage
+
+Weather Features
+
+Temperature
+
+Humidity
+
+Rainfall
+
+Wind
+
+Soil Features
+
+Moisture
+
+pH
+
+Soil type
+
+Historical Features
+
+Previous disease occurrence
+
+Previous pest occurrence
+
+Local disease frequency
+
+Geographic Features
+
+Latitude
+
+Longitude
+
+Region
+
+Village/District
+
+🎯 Risk Classification
+
+Risk Level
+
+Meaning
+
+🟢 Low
+
+Normal monitoring
+
+🟡 Moderate
+
+Increased monitoring
+
+🟠 High
+
+Preventive action recommended
+
+🔴 Critical
+
+Immediate expert attention
+
+Risk thresholds should be determined using validation data and agricultural domain expertise.
+
+📍 Geospatial Intelligence
+
+The platform can organize risk information by:
+
+District
+   ↓
+Taluka
+   ↓
+Village
+   ↓
+Field
+
+Example:
+
+Nashik District
+
+🟢 Village A → Low Risk
+🟡 Village B → Moderate
+🟠 Village C → High
+🔴 Village D → Critical
+
+👨‍🌾 Farmer Application
+
+The farmer interface should be simple and accessible.
+
+┌──────────────────────────────┐
+│       🌾 CropShield AI       │
+├──────────────────────────────┤
+│                              │
+│   📷 Check My Crop           │
+│                              │
+│   🌦️ Crop Risk               │
+│                              │
+│   📍 My Field                │
+│                              │
+│   📋 My Reports              │
+│                              │
+│   🗣️ Marathi | हिंदी | EN    │
+│                              │
+└──────────────────────────────┘
+
+👨‍💼 Agriculture Officer Dashboard
+
+The dashboard can display:
+
+Total Reports
+Active Disease Cases
+High-Risk Fields
+Pest Hotspots
+Disease Hotspots
+Pending Expert Validation
+Resolved Cases
+
+🗺️ Hotspot Map
+
+                 DISTRICT MAP
+
+       🟢       🟡        🟢
+
+              🔴
+                     🟠
+
+       🟡                  🟢
+
+              🔴
+
+Legend:
+🟢 Low
+🟡 Moderate
+🟠 High
+🔴 Critical
+
+🗄️ Database Design
+
+Possible tables:
+
+users
+farmers
+fields
+crops
+crop_images
+disease_predictions
+pest_observations
+weather_data
+soil_data
+disease_history
+expert_validations
+advisories
+notifications
+locations
+risk_scores
+
+🛠️ Technology Stack
+
+Frontend
+
+React.js
+
+Tailwind CSS
+
+JavaScript
+
+Recharts
+
+Leaflet / OpenStreetMap
+
+Backend
+
+Python
+
+FastAPI
+
+REST API
+
+AI/ML
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+XGBoost
+
+PyTorch / TensorFlow
+
+OpenCV
+
+Database
+
+MySQL / PostgreSQL
+
+GIS
+
+Leaflet
+
+OpenStreetMap
+
+GeoJSON
+
+Deployment
+
+Docker
+
+Cloud Platform
+
+GitHub
+
+📁 GitHub Project Structure
+
+CropShield-AI/
+│
+├── README.md
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
+│   └── package.json
+│
+├── backend/
+│   ├── main.py
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── models/
+│   └── schemas/
+│
+├── ml/
+│   ├── image_model/
+│   ├── risk_model/
+│   ├── preprocessing/
+│   ├── training/
+│   └── prediction/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── sample/
+│
+├── database/
+│   └── schema.sql
+│
+├── notebooks/
+│   ├── EDA.ipynb
+│   ├── image_training.ipynb
+│   └── risk_prediction.ipynb
+│
+├── docs/
+│   ├── architecture.md
+│   ├── dataset.md
+│   └── methodology.md
+│
+├── requirements.txt
+├── .gitignore
+└── LICENSE
+
+📈 Model Evaluation
+
+Image Classification
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+Confusion Matrix
+
+ROC-AUC where appropriate
+
+Risk Prediction
+
+Precision
+
+Recall
+
+F1-score
+
+ROC-AUC
+
+Calibration metrics
+
+Recall/sensitivity is particularly important for early-warning systems because missing a genuine high-risk case can be more harmful than generating an additional warning.
+
+💡 Explainable AI
+
+The system should explain the reasoning behind a risk prediction.
+
+Example:
+
+Prediction: High Disease Risk
+
+Important Factors:
+✓ High humidity
+✓ Recent rainfall
+✓ Crop growth stage
+✓ Historical local occurrence
+✓ Visual symptoms detected in image
+
+Confidence: 91%
+
+Possible techniques:
+
+SHAP
+
+LIME
+
+Feature Importance
+
+Grad-CAM for image models
+
+🚨 Early Warning System
+
+Example:
+
+🔴 HIGH CROP DISEASE RISK
+
+Location: Village X
+Crop: Tomato
+Risk: High
+
+Reasons:
+• High humidity
+• Recent rainfall
+• Crop-stage vulnerability
+
+Recommended Action:
+Inspect affected plants and consult the extension/expert channel.
+
+🔁 Continuous Learning
+
+AI Prediction
+      ↓
+Farmer / Officer Observation
+      ↓
+Expert Validation
+      ↓
+Confirmed Disease
+      ↓
+Verified Training Data
+      ↓
+Periodic Model Retraining
+      ↓
+Improved Prediction
+
+🏆 Key Innovation
+
+The project is not limited to:
+
+Upload image → Identify disease
+
+Instead, it combines:
+
+Crop Image
+    +
+Weather
+    +
+Crop Stage
+    +
+Soil
+    +
+Pest History
+    +
+Location
+    +
+Expert Validation
+    ↓
+Early Risk Detection
+    +
+Forecasting
+    +
+Actionable Advisory
+
+This creates a more comprehensive farm-level crop-health early-warning system.
+
+🌍 Expected Impact
+
+The solution aims to:
+
+Enable earlier disease detection
+
+Reduce crop losses
+
+Support targeted crop-management practices
+
+Reduce unnecessary pesticide usage
+
+Improve extension response
+
+Improve surveillance coverage
+
+Support preventive intervention planning
+
+Help farmers make data-driven decisions
+
+👥 Target Users
+
+Primary Users
+
+Farmers
+
+Small and marginal farmers
+
+Farmer Producer Organizations (FPOs)
+
+Secondary Users
+
+Agriculture extension workers
+
+Agricultural experts
+
+Laboratories
+
+Agriculture officers
+
+Government departments
+
+📱 Example Use Case
+
+A farmer notices unusual spots on tomato leaves.
+
+Farmer
+  ↓
+Takes Photo
+  ↓
+Uploads Image
+  ↓
+Selects Tomato + Crop Stage
+  ↓
+System checks environmental risk
+  ↓
+AI analyzes symptoms
+  ↓
+Risk = HIGH
+  ↓
+Expert validation requested
+  ↓
+Farmer receives advisory
+  ↓
+Follow-up monitoring
+
+👨‍⚖️ SIH Judge Questions & Answers
+
+Q1. What actual problem are you solving?
+
+Answer:
+Farmers may identify crop diseases and pest infestations only after visible damage has already spread. Our solution aims to detect and forecast crop-health risks earlier by combining image analysis with weather, crop-stage, soil, pest-history and location information.
+
+Q2. Why isn't an image-classification model alone enough?
+
+Answer:
+An image can identify visible symptoms, but early risk may exist before strong visual symptoms appear. Weather, crop stage, local pest history and soil conditions provide additional context. Therefore, our system uses multimodal information instead of relying only on an image.
+
+Q3. Where will you get the dataset?
+
+Answer:
+For the prototype, we can use publicly available agricultural image datasets such as PlantVillage or PlantDoc, together with legally accessible weather and agricultural datasets. Simulated/sample environmental data can be used where appropriate. A production system can integrate verified field observations and expert-confirmed cases.
+
+Q4. How does AI actually work?
+
+Answer:
+Computer vision analyzes crop images for visual symptoms. Machine-learning models analyze environmental and historical features to estimate disease or pest risk. The outputs are combined to provide a contextual risk assessment and advisory.
+
+Q5. Can the AI replace agricultural experts?
+
+Answer:
+No. It is an early-warning and decision-support system. High-risk or uncertain cases can be referred to agricultural experts, extension workers or laboratories.
+
+Q6. What if the AI prediction is wrong?
+
+Answer:
+The system can provide confidence scores and an expert-validation workflow. Uncertain predictions are not presented as definitive diagnoses. Verified field results can also be used for future model improvement.
+
+Q7. How will you reduce unnecessary pesticide usage?
+
+Answer:
+The platform focuses on early detection, monitoring and integrated pest-management practices rather than automatically recommending pesticides. Any treatment-related recommendation should follow validated agricultural guidance.
+
+Q8. Why is weather data important?
+
+Answer:
+Weather conditions can influence the development and spread of many diseases and pests. Combining weather with crop stage and historical information allows the system to estimate risk instead of only identifying already-visible symptoms.
+
+Q9. What is innovative about your project?
+
+Answer:
+The innovation is the integration of crop images, weather, crop stage, soil, pest history, geospatial information and expert validation into one farm-level early-warning and management platform.
+
+Q10. How will farmers use it?
+
+Answer:
+Farmers can use a simple mobile or web interface to upload a crop image and provide basic crop information. The system returns an understandable risk assessment and advisory in a supported local language.
+
+Q11. What happens if internet connectivity is poor?
+
+Answer:
+A future deployment can support offline data capture and synchronization when connectivity becomes available. Lightweight models can also be considered for mobile or edge inference.
+
+Q12. How will you handle different crops?
+
+Answer:
+The prototype can initially focus on selected important crops and diseases. After validation, the system can be expanded using crop-specific or multi-crop models.
+
+Q13. How do you identify an emerging hotspot?
+
+Answer:
+Geotagged observations and risk predictions can be aggregated over time. Increasing concentrations of confirmed or high-risk cases can be visualized as geographic hotspots for officials.
+
+Q14. How will the model improve over time?
+
+Answer:
+Expert-confirmed field observations can be stored as verified data. After quality checks, these observations can be incorporated into periodic model retraining.
+
+Q15. What is the real-world impact?
+
+Answer:
+The system aims to detect crop-health problems earlier, reduce avoidable crop loss, support targeted management, reduce unnecessary pesticide use, improve extension response and strengthen agricultural surveillance.
+
+🏆 SIH MVP
+
+The initial prototype should focus on:
+
+Crop image upload
+
+Disease detection
+
+Risk prediction
+
+Farmer advisory
+
+Geospatial risk map
+
+Agriculture dashboard
+
+Input
+ ↓
+Data Processing
+ ↓
+AI/ML
+ ↓
+Disease & Risk Detection
+ ↓
+Recommendation
+ ↓
+Dashboard
+
+🚀 Future Scope
+
+Real-time IoT pest traps
+
+Drone-based crop monitoring
+
+Satellite imagery
+
+Edge AI
+
+Offline mobile AI
+
+Advanced weather forecasting
+
+Village-level disease forecasting
+
+Automated laboratory referral
+
+Government agricultural integration
+
+FPO dashboards
+
+Voice-based farmer assistant
+
+Marathi/Hindi voice interaction
+
+Advanced geospatial analytics
+
+Large-scale crop surveillance
+
+Continuous model learning
+
+📌 Project Roadmap
+
+Phase 1
+├── Problem Research
+├── Dataset Collection
+└── Prototype Design
+        ↓
+Phase 2
+├── Image Model
+├── Risk Model
+└── Backend
+        ↓
+Phase 3
+├── Farmer Dashboard
+├── Officer Dashboard
+└── GIS Map
+        ↓
+Phase 4
+├── Expert Validation
+├── Multilingual Advisory
+└── Notifications
+        ↓
+Phase 5
+├── Testing
+├── Deployment
+└── SIH Demonstration
+
+📦 Installation
+
+Clone Repository
+
+git clone https://github.com/your-username/CropShield-AI.git
+cd CropShield-AI
+
+Backend
+
+cd backend
+
+python -m venv .venv
+
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+Run backend:
+
+uvicorn main:app --reload
+
+Frontend
+
+cd frontend
+
+npm install
+
+npm run dev
+
+🧪 Testing
+
+Testing should cover:
+
+Image classification
+
+Risk prediction
+
+API endpoints
+
+Authentication
+
+Dashboard
+
+Map visualization
+
+Advisory generation
+
+Expert validation
+
+Multilingual output
+
+⚠️ Limitations
+
+The initial prototype may have:
+
+Limited crop/disease coverage
+
+Dataset bias
+
+Image-quality dependency
+
+Weather-data availability constraints
+
+Regional differences
+
+Limited field validation
+
+Internet connectivity constraints
+
+Model-generalization limitations
+
+These limitations should be documented and addressed during future development.
+
+🔐 Security & Privacy
+
+The platform should implement:
+
+Secure authentication
+
+Role-based authorization
+
+Encrypted communication
+
+Secure database access
+
+Minimal personal-data collection
+
+Farmer-data privacy
+
+Audit logs
+
+Secure image storage
+
+Access control for experts and officials
+
+⚠️ Disclaimer
+
+CropShield AI is intended as an agricultural screening, early-warning and decision-support system. AI predictions should not be treated as definitive diagnosis or as a substitute for qualified agricultural experts, laboratories or official agricultural advisories.
+
+🏁 Conclusion
+
+SIH 2026 Problem Statement 26131 focuses on early detection and management of crop diseases and pest infestations.
+
+CropShield AI addresses the challenge by combining:
+
+Computer Vision + Machine Learning + Weather Data + Crop Information + Soil Data + Pest History + GIS + Expert Validation + Farmer Advisory
+
+The ultimate goal is:
+
+Detect earlier. Act smarter. Protect crops.
+
+🔖 Keywords
+
+SIH 2026 SIH26131 Smart India Hackathon Crop Disease Detection Pest Detection Early Detection Agriculture AI AgriTech Machine Learning Computer Vision Crop Health Smart Farming Disease Forecasting Pest Forecasting GIS Geospatial Intelligence Farmer Advisory Agricultural AI Multimodal AI Explainable AI Maharashtra Agriculture
+
+👥 Team
+
+Name
+
+Role
+
+Team Member 1
+
+Team Lead / Backend
+
+Team Member 2
+
+AI/ML
+
+Team Member 3
+
+Frontend
+
+Team Member 4
+
+Database
+
+Team Member 5
+
+Research / Documentation
+
+Team Member 6
+
+Testing / Deployment
+
+📜 License
+
+This project is developed as a solution for Smart India Hackathon 2026.
+
+The final license should be selected according to the team's institutional and open-source requirements.
